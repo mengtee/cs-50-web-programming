@@ -1,6 +1,9 @@
 import sys
-x = int(input("x: "))
-y = int(input("y: "))
+try:
+    x = int(input("x: "))
+    y = int(input("y: "))
+except ValueError:
+    print("Please enter a valid value")
 
 try:
     result =x/y
