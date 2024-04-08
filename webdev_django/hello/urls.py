@@ -7,5 +7,7 @@ urlpatterns =[
     path("", views.index, name="index"),
     path("brian", views.brian, name="brian"),
     path("david", views.david, name="david"),
+
+    # Taking name variable as a string
     path("<str:name>", views.greet, name="greet")
 ]

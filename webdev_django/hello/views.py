@@ -11,5 +11,8 @@ def brian(request):
 def david(request):
     return HttpResponse("Hello David!")
 
+# Taking name as an argument and render out the greet.html page
 def greet(request, name):
-    return HttpResponse(f"Hello, {name.capitalize()}!")
+    return render(request, "hello/greet.html",{
+        "name": name.capitalize()
+    })

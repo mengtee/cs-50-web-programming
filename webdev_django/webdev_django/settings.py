@@ -29,8 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+# Django can have several application, and new application created need to be defined here
 INSTALLED_APPS = [
+    "newyear",
     "hello",
     "django.contrib.admin",
     "django.contrib.auth",
